@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bean id="newsProvider" class="../provider/FXNewsProvider">
+	<property name="newsListener">
+		<ref bean="djNewsListener"/>
+	</property>
+	
+	<property name="newPersistener">
+		<ref bean="djNewsPersister"/>
+	</property>
+</bean>
+
+<bean id="djNewsListener" class="..impl.DowJonsNewsListener">
+	
+</bean>
